@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid bg-light p-1 ">
+        <div class="container ">
+            <div class="display-3 text-center text-danger">MOVIE DATABASE</div>
+            <h4 class="text-center">Get All Information About Your Favourite Movie/TV Series</h4>
+            <input type="text" class="movieTitle form-control my-3 text-center"
+                placeholder="Search for the Movie/TV series">
+            <div class="row">
+                <button class="btn btn-info btn-lg mx-auto">SEARCH</button>
+            </div>
+            <div class="row justify-content-around m-5" id="info">
+                <div class="col-4">
+                    <img src="" alt="Poster Of Movie" id="poster">
+                </div>
+                <div class="col-7">
+                    <p id="movieHead" class="text-success"></p>
+                    <p class="plot text-success"></p>
+                    <p class="year text-success"></p>
+                    <p class="rated text-success"></p>
+                    <p class="director text-success"></p>
+                    <p class="cast text-success"></p>
+                    <p class="rating text-success"></p>
+                    <p class="boxOffice text-success"></p>
+                    <p class="language text-success"></p>
+                    <p class="production text-success"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="display-4 text-center">Featured</div>
+            <div class="card-deck">
+                <div class="card" id="bBad">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/wp2156237.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp1932889.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2156274.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2156303.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2156310.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <h5 class="card-title">Breaking Bad</h5>
+                        <p class="card-text">Walter White, a chemistry teacher, discovers that he has cancer and decides
+                            to get into the meth-making business to repay his medical debts. His priorities begin to
+                            change when he partners with Jesse.</p>
+                        <h3 class="text-success">IMDb Rating : 9.5/10</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/wp2274354.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2879190.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp3988785.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp3988812.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp3988820.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Prison Break</h5>
+                        <p class="card-text">An engineer installs himself in a prison he helped design, in order to save
+                            his falsely accused brother from a death sentence.</p>
+                        <h3 class="text-success">IMDb rating : 8.3/10</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/wp2061595.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2061596.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2061624.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2061650.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2061701.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sherlock</h5>
+                        <p class="card-text">Dr. Watson, a former army doctor, finds himself sharing a flat with
+                            Sherlock Holmes, an eccentric individual with a knack for solving crimes. Together, they
+                            take on the most unusual cases.</p>
+                        <h3 class="text-success">IMDb rating : 9.1/10</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="card-deck ">
+                <div class="card">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/wp3256635.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4112175.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp3256635.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4994825.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4994825.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Friends</h5>
+                        <p class="card-text">Follow the lives of six reckless adults living in Manhattan, as they
+                            indulge in
+                            adventures which make their lives both troublesome and happening.</p>
+                        <h3 class="text-success">IMDb rating : 8.9/10</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp4244315.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Joker</h5>
+                        <p class="card-text">Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as
+                            he
+                            walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day
+                            job as
+                            a clown, and the guise he projects in a futile attempt to feel like he's part of the world
+                            around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into
+                            madness as he transforms into the criminal mastermind known as the Joker.</p>
+                        <h3 class="text-success">IMDb rating : 9.3/10</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/wp4949199.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4949200.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp2554213.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4949243.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/wp4949239.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Dark Knight</h5>
+                        <p class="card-text">After Gordon, Dent and Batman begin an assault on Gotham's organised crime,
+                            the
+                            mobs hire the Joker, a psychopathic criminal mastermind, who wants to bring all the heroes
+                            down
+                            to his level.</p>
+                        <h3 class="text-success">IMDb Rating : 9.1/10</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
