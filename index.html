@@ -9,35 +9,27 @@
 <body>
     <div class="container-fluid bg-light p-1 ">
         <div class="container ">
-            <div class="display-3 text-center text-danger">MOVIE DATABASE</div>
-            <h4 class="text-center">Get All Information About Your Favourite Movie/TV Series</h4>
-            <input type="text" class="movieTitle form-control my-3 text-center"
-                placeholder="Search for the Movie/TV series">
+            <div class="display-3 text-center font-weight-bold">MOVIE DATABASE</div>
+            <h4 class="text-center">Get All Information About Your Favourite Movie / TV Series</h4>
             <div class="row">
-                <button class="btn btn-info btn-lg mx-auto">SEARCH</button>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="movieTitle form-control my-3 text-center"
+                        placeholder="Search for exact Movie / TV series">
+                    <button class="btn btn-info btn-block" id="strictSearch">SEARCH</button>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input type="text" class="movieTitle2 form-control my-3 text-center"
+                        placeholder="Search for the Movie / TV series">
+                    <button class="btn btn-info btn-block" id="normalSearch">SEARCH</button>
+                </div>
             </div>
-            <div class="row justify-content-around m-5" id="info">
-                <div class="col-4">
-                    <img src="" alt="Poster Of Movie" id="poster">
-                </div>
-                <div class="col-7">
-                    <p id="movieHead" class="text-success"></p>
-                    <p class="plot text-success"></p>
-                    <p class="year text-success"></p>
-                    <p class="rated text-success"></p>
-                    <p class="director text-success"></p>
-                    <p class="cast text-success"></p>
-                    <p class="rating text-success"></p>
-                    <p class="boxOffice text-success"></p>
-                    <p class="language text-success"></p>
-                    <p class="production text-success"></p>
-                </div>
+            <div class="row justify-content-around m-3 p-2" id="results">
             </div>
         </div>
         <div class="container my-4">
-            <div class="display-4 text-center">Featured</div>
+            <div class="h1 text-center font-weight-bold">Featured</div>
             <div class="card-deck">
-                <div class="card" id="bBad">
+                <div class="card">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -163,9 +155,7 @@
                             he
                             walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day
                             job as
-                            a clown, and the guise he projects in a futile attempt to feel like he's part of the world
-                            around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into
-                            madness as he transforms into the criminal mastermind known as the Joker.</p>
+                            a clown, and the guise he projects in a futile attempt.</p>
                         <h3 class="text-success">IMDb rating : 9.3/10</h3>
                     </div>
                 </div>
